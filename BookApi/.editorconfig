@@ -1,4 +1,0 @@
-# message severity for generated code files
-[*.g.cs]
-generated_code = true
-dotnet_diagnostic.CS1591.severity = none
