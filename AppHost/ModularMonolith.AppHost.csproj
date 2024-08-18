@@ -18,4 +18,10 @@
     <ProjectReference Include="..\BookApi\ModularMonolith.BookApi.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Update="C:\Users\pierr\source\repos\ModularMonolith\AppHost\.editorconfig">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EditorConfigFiles>
+  </ItemGroup>
+
 </Project>
