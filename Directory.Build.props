@@ -1,0 +1,25 @@
+<Project>
+  <PropertyGroup>
+    <Authors>Pierre G. Boutquin</Authors>
+    <Company>Boutquin Computer Consulting</Company>
+    <Copyright>Copyright © 2024, Pierre G. Boutquin. All rights reserved.</Copyright>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>12.0</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NeutralLanguage>en</NeutralLanguage>    
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <AnalysisMode>All</AnalysisMode>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <MinVerTagPrefix>v</MinVerTagPrefix>
+    <Version>$(PackageVersion)</Version>
+    <MinVerDefaultPreReleaseIdentifiers>beta</MinVerDefaultPreReleaseIdentifiers>
+    <RepositoryUrl>https://github.com/boutquin/ModularMonolith</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageVersion>$(PackageVersion)$(MinVerBuildMetadata)</PackageVersion>
+  </PropertyGroup>
+</Project>

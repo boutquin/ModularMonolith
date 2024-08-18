@@ -1,0 +1,37 @@
+name: PR Verify
+
+on:
+  workflow_dispatch:
+  # Set the workflow to run on pull request events that target the default branch
+  pull_request:
+    branches: 
+      - main
+
+jobs:
+  build:
+    name: PR Verify
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore workloads
+        run: dotnet workload restore
+      
+      - name: Restore dependencies
+        run: dotnet restore --locked-mode
+
+      - name: Build Release
+        run: dotnet build --configuration Release --no-restore --property WarningLevel=0 /clp:ErrorsOnlyquiet
+
+      - name: Run tests
+        run: dotnet test --configuration Release --no-build --verbosity normal
+
+      - name: Format code
+        run: dotnet format -v detailed --verify-no-changes
