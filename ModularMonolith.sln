@@ -15,6 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorConfig = .editorConfig
 		Directory.Build.props = Directory.Build.props
 		global.json = global.json
+		.github\workflows\pr-verify.yml = .github\workflows\pr-verify.yml
 		README.md = README.md
 	EndProjectSection
 EndProject

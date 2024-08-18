@@ -28,7 +28,7 @@ jobs:
         run: dotnet restore --locked-mode
 
       - name: Build Release
-        run: dotnet build --configuration Release --no-restore --property WarningLevel=0 /clp:ErrorsOnlyquiet
+        run: dotnet build --configuration Release --no-restore
 
       - name: Run tests
         run: dotnet test --configuration Release --no-build --verbosity normal
