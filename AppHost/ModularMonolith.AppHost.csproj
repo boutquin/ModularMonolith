@@ -6,6 +6,10 @@
     <UserSecretsId>9e43c1d4-0d43-4c0f-936e-bbccaf4c6ae8</UserSecretsId>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <RestoreSources>$(RestoreSources);../Packages;https://api.nuget.org/v3/index.json</RestoreSources>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting" Version="8.1.1-dev" />
     <PackageReference Include="Aspire.Hosting.AppHost" Version="8.1.0" />
