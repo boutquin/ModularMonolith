@@ -1,5 +1,7 @@
 # ModularMonolith
 
+[![PR Verify](https://github.com/boutquin/ModularMonolith/actions/workflows/pr-verify.yml/badge.svg)](https://github.com/boutquin/ModularMonolith/actions/workflows/pr-verify.yml)
+
 ---
 languages:
 - csharp

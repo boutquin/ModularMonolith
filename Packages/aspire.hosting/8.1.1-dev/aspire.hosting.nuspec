@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Aspire.Hosting</id>
+    <version>8.1.1-dev</version>
+    <authors>Microsoft</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>Icon.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/dotnet/aspire</projectUrl>
+    <description>Core abstractions for the .NET Aspire application model.</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>aspire hosting</tags>
+    <serviceable>true</serviceable>
+    <repository type="git" url="https://github.com/boutquin/aspire" commit="913acfb7e2761442701e9b6326ad967c09520923" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Grpc.AspNetCore" version="2.65.0" exclude="Build,Analyzers" />
+        <dependency id="KubernetesClient" version="14.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Hosting" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Polly.Core" version="8.4.1" exclude="Build,Analyzers" />
+        <dependency id="Google.Protobuf" version="3.27.2" exclude="Build,Analyzers" />
+        <dependency id="Grpc.Net.ClientFactory" version="2.65.0" exclude="Build,Analyzers" />
+        <dependency id="Grpc.Tools" version="2.65.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Abstractions" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="8.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="8.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Hosting.Abstractions" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Http" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="8.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options" version="8.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Primitives" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
